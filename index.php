@@ -1,18 +1,12 @@
 <?php
+
 	include_once 'config.php';
 
-
         $stats = json_decode(file_get_contents(Config::$url."TDTInfo/Resources.json"));
-        //Test whether HttpRequest succeeded
-
 
         if(is_object($stats)){
-
-	 $modules = get_object_vars($stats->Resources);
-
+		$modules = get_object_vars($stats->Resources);
         }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +31,7 @@
     </style>
     <link href="bootstrap/css/custom.css" rel="stylesheet">
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script>
             $().ready(function() {
                     var $scrollingDiv = $("#scrollingDiv");
