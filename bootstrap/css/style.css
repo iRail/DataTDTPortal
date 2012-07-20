@@ -1,0 +1,63 @@
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+
+ul.dropdown-menu {
+    margin-top: -2px;
+}
+
+a.menu:after,.dropdown-toggle:after {
+    content: none;
+}
+
+#user {
+    float: right;
+}
+
+body {
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+
+/* Kinda dirty(so the internet says). Prevents headers from disappearing behind fixed top bar. */
+:target {
+    padding-top: 35px;
+}
+.sidebar-nav {
+    padding: 9px 0;
+}
+.sidebar-nav-fixed {
+    position:fixed;
+    top:60px;
+    width:140px;
+}
+h1 {
+    word-wrap: break-word;
+}
+#fluidList {
+    float: right;
+    display: none;
+}
+@media (max-width: 767px) {
+    #mainList {
+        display: none;
+    }
+    .sidebar-nav-fixed {
+        position:static;
+        width:auto;
+    }
+    #fluidList {
+        display: block;
+    }
+}
+@media (max-width: 979px) {
+    #mainList {
+        display: none;
+    }
+    .sidebar-nav-fixed {
+        top:70px;
+    }
+    #fluidList {
+        display: block;
+    }
+}

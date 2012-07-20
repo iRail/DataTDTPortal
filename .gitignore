@@ -1,0 +1,6 @@
+##Netbeans
+/nbproject/
+/nbproject/private/
+
+##Freefilesync
+sync.ffs_db
